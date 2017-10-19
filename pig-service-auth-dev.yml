@@ -6,5 +6,5 @@ jwt:
   secret: mySecret
   expiration: 604800
   token:
-    header: "wangwang "
+    header: "jiejie "
 
