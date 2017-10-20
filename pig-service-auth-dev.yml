@@ -6,5 +6,5 @@ jwt:
   secret: mySecret
   expiration: 604800
   token:
-    header: "Yoyo "
+    header: "2017年10月20日23:43:14 "
 
