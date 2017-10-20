@@ -6,5 +6,5 @@ jwt:
   secret: mySecret
   expiration: 604800
   token:
-    header: "冷冷 "
+    header: "Yoyo "
 
