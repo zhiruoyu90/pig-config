@@ -6,5 +6,5 @@ jwt:
   secret: mySecret
   expiration: 604800
   token:
-    header: "更新所有节点哟龟龟 "
+    header: "所有节点加入消息总线 "
 
