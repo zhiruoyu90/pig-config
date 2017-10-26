@@ -21,6 +21,11 @@ zuul:
       serviceId: pig-service-auth
       stripPrefix: true
       sensitiveHeaders:
+    demo-service:
+      path: /demo/**
+      serviceId: pig-demo-service
+      stripPrefix: true
+      sensitiveHeaders:
 
 server:
   port: 1000
