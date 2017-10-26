@@ -5,7 +5,7 @@ zuul:
     socket-timeout-millis: 20000
   routes:
     auth-service:
-      path: /auth/**
+      path: /oauth/**
       serviceId: pig-service-auth
       stripPrefix: false
       sensitiveHeaders:
