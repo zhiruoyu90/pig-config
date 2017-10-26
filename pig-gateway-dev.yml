@@ -19,6 +19,7 @@ zuul:
     auth-service:
       path: /auth/**
       serviceId: pig-service-auth
+      stripPrefix：true
       sensitiveHeaders:
 
 server:
