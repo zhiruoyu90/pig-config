@@ -1,4 +1,3 @@
 server:
-  context-path: /auth
   port: 3000
 
