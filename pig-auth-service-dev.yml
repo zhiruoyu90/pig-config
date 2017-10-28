@@ -1,3 +1,10 @@
 server:
   port: 3000
 
+pig:
+  auth:
+    signKey: pig
+    clientId: pig
+    clientSecret: pig
+    scope: server
+
