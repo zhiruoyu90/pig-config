@@ -27,5 +27,14 @@ zuul:
       stripPrefix: true
       sensitiveHeaders:
 
+security:
+  sessions: stateless
+  oauth2:
+    resource:
+      loadBalanced: true
+      user-info-uri: http://pig-auth-service/user
+      prefer-token-info: false
+      service-id: pig-gateway
+      
 server:
   port: 1000
