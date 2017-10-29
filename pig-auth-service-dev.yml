@@ -6,7 +6,12 @@ pig:
     clientId: pig
     clientSecret: pig
     scope: server
-
+    
+#Redis cache 过期时间设置
+redis:
+  cache:
+    expiration: 3600
+    
 # datasoure默认使用JDBC
 spring:
   datasource:
@@ -33,6 +38,7 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: true
+    
 logging:
   config: classpath:logback.xml
 
