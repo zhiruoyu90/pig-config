@@ -65,3 +65,5 @@ mybatis-plus:
       
 server:
   port: 1000
+logging:
+  config: classpath:logback.xml
