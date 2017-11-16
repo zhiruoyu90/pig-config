@@ -37,6 +37,6 @@ security:
       service-id: pig-gateway
       
 server:
-  port: 1000
+  port: 9999
 logging:
   config: classpath:logback.xml
