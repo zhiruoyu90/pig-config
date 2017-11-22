@@ -6,7 +6,13 @@ pig:
     clientId: pig
     clientSecret: pig
     scope: server
-        
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: redis
+    
 logging:
   config: classpath:logback.xml
 
