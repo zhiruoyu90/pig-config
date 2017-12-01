@@ -26,6 +26,16 @@ zuul:
       serviceId: pig-admin-service
       stripPrefix: true
       sensitiveHeaders:
+  ratelimit:
+    key-prefix: pig-ratelimit
+    enabled: true
+    repository: REDIS
+    behind-proxy: true
+    policies:
+      myServiceId: pig-admin-service
+        limit: 10
+        quota: 1000
+        refresh-interval: 60
 
 security:
   sessions: stateless
