@@ -40,10 +40,8 @@ zuul:
     policies:
       pig-admin-service:
         limit: 10
-        quota: 1000
+        quota: 5
         refresh-interval: 60
-        type:
-          - user
   
 security:
   sessions: stateless
