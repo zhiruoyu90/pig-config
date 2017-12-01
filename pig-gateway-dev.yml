@@ -42,6 +42,8 @@ zuul:
         limit: 10
         quota: 1000
         refresh-interval: 60
+        type:
+          - user
   
 security:
   sessions: stateless
