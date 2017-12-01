@@ -39,9 +39,9 @@ zuul:
     behind-proxy: true
     policies:
       pig-admin-service:
-        limit: 10
-        quota: 5
-        refresh-interval: 60
+        limit: 10000
+        quota: 1
+        refresh-interval: 600
   
 security:
   sessions: stateless
