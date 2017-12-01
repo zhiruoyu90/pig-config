@@ -27,14 +27,15 @@ zuul:
       stripPrefix: true
       sensitiveHeaders:
   ratelimit:
-    key-prefix: your-prefix 
+    key-prefix: pig-ratelimite 
     enabled: true 
     repository: REDIS 
     behind-proxy: true
-    default-policy:
-      limit: 10
-      quota: 1000
-      refresh-interval: 60
+    policies:
+      pig-admin-service:
+        limit: 10
+        quota: 1000
+        refresh-interval: 60
   
 security:
   sessions: stateless
