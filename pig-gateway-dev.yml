@@ -21,7 +21,7 @@ zuul:
       serviceId: pig-auth-service
       stripPrefix: true
       sensitiveHeaders:
-    demo-service:
+    pig-admin-service:
       path: /admin/**
       serviceId: pig-admin-service
       stripPrefix: true
