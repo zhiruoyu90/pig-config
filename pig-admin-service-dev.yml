@@ -4,6 +4,10 @@ server:
 redis:
   cache:
     expiration: 3600
+#文件上传目录（使用磁盘绝对路径）
+file:
+  upload:
+    path: /data/upload/
     
 # datasoure默认使用JDBC
 spring:
