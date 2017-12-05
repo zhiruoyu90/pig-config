@@ -18,7 +18,6 @@ spring:
     password: redis
   http:
     multipart:
-      location: D:\data\upload
       max-file-size: 1000MB
       max-request-size: 1000MB
 
