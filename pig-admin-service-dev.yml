@@ -16,6 +16,8 @@ spring:
     host: 123.206.94.20
     port: 6379
     password: redis
+  rabbitmq:
+    host: 123.206.94.20   
   http:
     multipart:
       max-file-size: 1000MB
