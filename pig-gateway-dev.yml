@@ -60,7 +60,8 @@ security:
       user-info-uri: http://pig-auth-service/user
       prefer-token-info: false
       service-id: pig-gateway
-  filter:
+filter:
+  urls:
     anon:
       - /auth/**
       - /auth/**
