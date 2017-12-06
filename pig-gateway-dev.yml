@@ -60,8 +60,14 @@ security:
       user-info-uri: http://pig-auth-service/user
       prefer-token-info: false
       service-id: pig-gateway
+  filter:
+    anon:
+      - lengleng1
+      - lengleng2
+      - lengleng3
       
 server:
   port: 9999
+  
 logging:
   config: classpath:logback.xml
