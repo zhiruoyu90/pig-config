@@ -45,6 +45,12 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     cache-enabled: true
     
+qiniu:
+  accessKey: hM2cBDEM0FTYzpXbigRW90kV12NhhzhFM3jCzurJ
+  secretKey: g0HJr2Ltrs0k6tJDY6pDI2aVMUCPSWZDTROLcFMs
+  bucket: pigcloud
+  host: http://p0hpm86wj.bkt.clouddn.com/
+    
 logging:
   config: classpath:logback.xml
 
