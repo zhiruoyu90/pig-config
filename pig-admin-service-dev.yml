@@ -20,7 +20,7 @@ spring:
     host: 123.206.94.20
     port: 5672
     username: guest
-    password: guest 
+    password: guest
   http:
     multipart:
       max-file-size: 1000MB
