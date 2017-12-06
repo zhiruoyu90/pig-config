@@ -9,7 +9,7 @@ pig:
 
 spring:
   redis:
-    host: localhost
+    host: 123.206.94.20
     port: 6379
     password: redis
     

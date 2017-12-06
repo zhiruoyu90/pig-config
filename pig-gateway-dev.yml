@@ -1,12 +1,14 @@
 spring:
   redis:
-    host: localhost
+    host: 123.206.94.20
     port: 6379
     password: redis
   http:
     multipart:
       max-file-size: 1000MB
-      max-request-size: 1000MB    
+      max-request-size: 1000MB
+  rabbitmq:
+    host: 123.206.94.20    
     
 hystrix:
   command:

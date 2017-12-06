@@ -13,7 +13,7 @@ spring:
     password: root
     url: jdbc:mysql://127.0.0.1/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true
   redis:
-    host: localhost
+    host: 123.206.94.20
     port: 6379
     password: redis
   http:
