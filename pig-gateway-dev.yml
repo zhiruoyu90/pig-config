@@ -62,9 +62,8 @@ security:
       service-id: pig-gateway
   filter:
     anon:
-      - lengleng1
-      - lengleng2
-      - lengleng3
+      - /auth/**
+      - /auth/**
       
 server:
   port: 9999
