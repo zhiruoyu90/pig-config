@@ -9,18 +9,18 @@ redis:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: root
+    username: ENC(k05F1ZXkBfv7DyRGgprj2A==)
+    password: ENC(k05F1ZXkBfv7DyRGgprj2A==)
     url: jdbc:mysql://127.0.0.1/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true
   redis:
     host: 123.206.94.20
     port: 6379
-    password: redis
+    password: ENC(pr0Ohcnc2rcqFjM/8OCjPA==)
   rabbitmq:
     host: 123.206.94.20
     port: 5672
-    username: lengleng
-    password: lengleng
+    username: ENC(7/5Zi1aQY/I7GACnfdVbpR1JtTrkM2Sa)
+    password: ENC(7/5Zi1aQY/I7GACnfdVbpR1JtTrkM2Sa)
   http:
     multipart:
       max-file-size: 1000MB
@@ -44,10 +44,14 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: true
-    
+#加密配置
+jasypt:
+  encryptor:
+    password: lengleng
+
 qiniu:
   accessKey: hM2cBDEM0FTYzpXbigRW90kV12NhhzhFM3jCzurJ
-  secretKey: g0HJr2Ltrs0k6tJDY6pDI2aVMUCPSWZDTROLcFMs
+  secretKey: ENC(HM/K0KmtFoZSBhGDEA0Ez71ePTncZlQ954DfLNMZuOftKZq+2WR+dCXH9QEsf768q9wwd92RXLE=)
   bucket: pigcloud
   host: http://p0hpm86wj.bkt.clouddn.com/
     
