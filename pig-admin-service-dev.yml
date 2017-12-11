@@ -13,11 +13,11 @@ file:
 
 # datasoure默认使用JDBC
 spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: ENC(7/5Zi1aQY/I7GACnfdVbpR1JtTrkM2Sa)
-    password: ENC(7/5Zi1aQY/I7GACnfdVbpR1JtTrkM2Sa)
-    url: jdbc:mysql://127.0.0.1:3306/pig?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=true
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: ENC(7/5Zi1aQY/I7GACnfdVbpR1JtTrkM2Sa)
+#    password: ENC(7/5Zi1aQY/I7GACnfdVbpR1JtTrkM2Sa)
+#    url: jdbc:mysql://127.0.0.1:3306/pig?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=true
   redis:
     host: 127.0.0.1
     port: 6379
