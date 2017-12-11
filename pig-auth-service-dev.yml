@@ -12,7 +12,6 @@ spring:
     host: 127.0.0.1
     port: 6379
     password: ENC(wangyunliang)
-    
 #加密参数
 jasypt:
   encryptor:

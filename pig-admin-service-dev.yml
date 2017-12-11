@@ -10,6 +10,7 @@ file:
   upload:
     path: D:\data\upload
     
+
 # datasoure默认使用JDBC
 spring:
   datasource:
