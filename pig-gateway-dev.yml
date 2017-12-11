@@ -2,7 +2,16 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
-    password: wangyunliang
+    password: ENC(wangyunliang)
+  http:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  rabbitmq:
+    host: 123.206.94.20
+    port: 5672
+    username: lengleng
+    password: lengleng
     
 hystrix:
   command:
@@ -10,17 +19,17 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 30000
 
 ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
+  ReadTimeout: 30000
+  ConnectTimeout: 30000
 
 zuul:
   ignoredServices: '*'
   host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 20000
+    connect-timeout-millis: 30000
+    socket-timeout-millis: 30000
   routes:
     auth-service:
       path: /auth/**
@@ -51,8 +60,19 @@ security:
       user-info-uri: http://pig-auth-service/user
       prefer-token-info: false
       service-id: pig-gateway
+#加密参数
+jasypt:
+  encryptor:
+    password: lengleng
+    
+filter:
+  urls:
+    anon:
+      - /auth/**
+      - /auth/**
       
 server:
   port: 9999
+  
 logging:
   config: classpath:logback.xml

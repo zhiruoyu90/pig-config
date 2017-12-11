@@ -3,15 +3,20 @@ server:
 
 pig:
   auth:
-    clientId: pig
-    clientSecret: pig
+    clientId: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
+    clientSecret: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
     scope: server
 
 spring:
   redis:
     host: 127.0.0.1
     port: 6379
-    password: wangyunliang
+    password: ENC(wangyunliang)
+    
+#加密参数
+jasypt:
+  encryptor:
+    password: lengleng
     
 logging:
   config: classpath:logback.xml
