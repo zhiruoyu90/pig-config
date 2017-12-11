@@ -1,0 +1,22 @@
+server:
+  port: 3000
+
+pig:
+  auth:
+    clientId: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
+    clientSecret: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
+    scope: server
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: ENC(pr0Ohcnc2rcqFjM/8OCjPA==)
+#加密参数
+jasypt:
+  encryptor:
+    password: lengleng
+    
+logging:
+  config: classpath:logback.xml
+
